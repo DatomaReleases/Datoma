@@ -1,0 +1,18 @@
+.wy-side-nav-search {
+background-color:#002D3C;
+padding-top: 0px;
+}
+/* mobile version */
+.wy-nav-top {
+background-color:#002D3C; 
+padding-top: 0px;
+}
+.logo {
+  scale: 0.7;
+}
+a[href="#"] { /*also index.html, but when located there*/
+  margin-bottom:0px;
+  }
+a[href$="index.html"] {
+  margin-bottom:0px;
+  }

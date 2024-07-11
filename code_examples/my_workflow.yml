@@ -1,0 +1,25 @@
+workflow:
+  - id: my_first_step
+    name: "First step title" 
+    tool: timsconvert
+    task: timsconvert
+    input_mapping:
+      samples: my_global_input
+  - id: my_second_step
+    name: "Second step title"
+    depends_on:
+      - my_first_step
+    tool: rmsistd
+    task: rmsi
+    parameter_mapping:
+       "preprocessing:peakbinning:enable": my_global_param
+    input_mapping:
+      input:
+        origin: my_first_step
+        regex:
+          - .imzML$
+          - .ibd$
+  - id: my_third_step
+    name: "Third step title"
+    tool: xcms
+    task: xcmspeakpicking

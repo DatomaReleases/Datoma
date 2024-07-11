@@ -1,0 +1,40 @@
+{
+  "globalInputs": [
+    {
+      "key": "my_global_input",
+      "label": "rMSI input files",
+      "model": [],
+      "useROI": true
+    }
+  ],
+  "globalParameters": [
+    {
+      "label": "Column A",
+      "parameters": [
+        {
+          "key": "my_global_param",
+          "label": "Global param",
+          "type": "InputSwitch",
+          "model": false
+        }
+      ]
+    }
+  ],
+  "parameterOverrides": [
+    {
+      "stepKey": "my_second_step",
+      "parameterKey": "preprocessing:peakbinning:tolerance",
+      "parameterModel": 500
+    },
+    {
+      "stepKey": "my_second_step",
+      "parameterKey": "preprocessing:peakbinning:tolerance_in_ppm",
+      "parameterModel": true
+    },
+    {
+      "stepKey": "my_second_step",
+      "parameterKey": "isPeaklist",
+      "parameterModel": true
+    }
+  ]
+}
