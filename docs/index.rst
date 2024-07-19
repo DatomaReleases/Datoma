@@ -47,7 +47,7 @@ The following steps will guide you through the installation process:
     * Python 3.11 or higher
     * pip
 
-1. Install datoma:
+1. Install `datoma <https://pypi.org/project/datoma/>`_:
 
 .. code-block:: bash
 
