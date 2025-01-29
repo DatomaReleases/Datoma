@@ -22,5 +22,6 @@ DatomaJob
       ~datoma.DatomaJob.DatomaJob.list_outputs
       ~datoma.DatomaJob.DatomaJob.submit
       ~datoma.DatomaJob.DatomaJob.export_json
+      ~datoma.DatomaJob.DatomaJob.query_input_keys
 
 To see usage examples of the ``DatomaJob`` module, refer to :ref:`using_datomajob`.

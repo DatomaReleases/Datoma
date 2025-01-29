@@ -1,6 +1,6 @@
 [project]
 name = "datoma"
-version = "0.3.7"
+version = "0.3.8"
 description = "Library to create, submit and handle Datoma's jobs and workflows from Python"
 dependencies = [
     "requests>=2.31.0",
@@ -19,7 +19,9 @@ dependencies = [
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
-
+[project.urls]
+"Homepage" = "https://datoma.cloud"
+"Documentation" = "https://datoma.readthedocs.io/en/latest/index.html#"
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"

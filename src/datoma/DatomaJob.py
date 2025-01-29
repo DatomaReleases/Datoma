@@ -81,7 +81,18 @@ class DatomaJob:
             model['input'].update({skeleton['inputs'][i]['key'] : skeleton['inputs'][i]['model']})
         return model
     
+    def query_input_keys(self):
+        """Queries the input and parameter keys for the tool : task.
 
+        :return: A dictionary with the input and parameter keys.
+        :rtype: dict
+        """
+        skeleton_keys = {}
+        skeleton_keys['parameters'] = list(self.model['params'].keys())
+        skeleton_keys['inputs'] = list(self.model['input'].keys())
+
+        return skeleton_keys
+    
     def _create_json(self):
         """Generates the JSON to be sent to Datoma's infrastructure.
 
