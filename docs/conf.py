@@ -18,7 +18,7 @@ sys.path.append(os.path.abspath('../src'))
 # -- Project information -----------------------------------------------------
 
 project = 'datoma'
-copyright = '2024, Datoma'
+copyright = '2025, Datoma'
 author = 'Eduard Bel'
 
 # The full version, including alpha/beta/rc tags
