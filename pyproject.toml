@@ -1,6 +1,6 @@
 [project]
 name = "datoma"
-version = "0.3.8"
+version = "1.0.4"
 description = "Library to create, submit and handle Datoma's jobs and workflows from Python"
 dependencies = [
     "requests>=2.31.0",

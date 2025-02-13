@@ -246,6 +246,11 @@ class DatomaWorkflow:
                                 input_dictionary[key][input] =dir_str
                                 for file_tu in to_upload:
                                     check_to_upload.append(file_tu)
+                        # if it is a local file
+                        if os.path.isfile(input_dictionary[key][input]):
+                            to_upload = _convert_local_s3([input_dictionary[key][input]], preserve_name)
+                            input_dictionary[key][input] = to_upload[0][1]
+                            check_to_upload.append(to_upload[0])
                     else:
                         for file in input_dictionary[key][input]:
                             if input_dictionary[key][input].get('roi') != None and not allows_roi:
